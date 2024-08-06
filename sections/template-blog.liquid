@@ -12,8 +12,8 @@
                   <img
                     class="w-full h-80 object-cover"
                     src="{{ article.image | image_url: width: 480}}"
-                    width=""
-                    height=""
+                    width="{{ article.image.width }}"
+                    height="{{ article.image.height }}"
                     alt="{{ article.image.alt }}"
                   >
                 </a>

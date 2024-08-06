@@ -19,10 +19,10 @@
 
                   <img
                     class="w-full h-full object-cover transition duration-1000 ease-in-out transform hover:scale-105"
-                    src="{{ collection.featured_image | img_url: 'medium' }}"
+                    src="{{ collection.featured_image | image_url: width: 540}}"
                     alt="{{ collection.title | escape }}"
-                    width=""
-                    height=""
+                    width="{{ collection.image.width }}"
+                    height="{{ collection.image.height }}"
                   >
                 </div>
               </a>
